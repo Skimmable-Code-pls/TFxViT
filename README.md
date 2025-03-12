@@ -1,10 +1,6 @@
 ### Road map
-- [ ] Rewrite torch model in tensorflow and test it with dummy input. Then compare to original torch model
-- [ ] Test with inference image and post some qualitative result here. Then compare to original torch model
-- [ ] Test it with validation loss and post the loss plot here. Then compare to original torch model
-- [ ] Test with inference for Accuracy, mIoU, F1, Recall. Then compare to original torch model
-
-### Model zoo
-- [ ] Swin and ViT. Will steal from [this repo](https://github.com/sayakpaul/swin-transformers-tf/tree/main) for starters
-- [ ] Swin x MAE, inspire from [Swin-MAE repo](https://github.com/Zian-Xu/Swin-MAE)
+- [ ] Scaled Dot Product Attention with customisable scaling. Steal from [torch F.scaled-dot-product-attention semi-source code](https://pytorch.org/docs/stable/generated/torch.nn.functional.scaled_dot_product_attention.html#torch.nn.functional.scaled_dot_product_attention). Then benchmark speed, weight importable, and attention map.
+- [ ] ViT. Steal from [Timm Vision Transformer](https://github.com/huggingface/pytorch-image-models/blob/main/timm/models/vision_transformer.py). Again benchmark like above
+- [ ] Swin. Steal from [Timm Swin](https://github.com/huggingface/pytorch-image-models/blob/main/timm/models/swin_transformer.py). Again benchmark like above
+- [ ] RSBuilding. That model is built from backbone [Vision Transformer SAM from Open-CD](https://github.com/Meize0729/RSBuilding/blob/main/opencd/models/backbones/vit_sam_normal.py). From first impression, it looks like [Timm Vision Transformer SAM](https://github.com/Meize0729/RSBuilding/blob/main/opencd/models/backbones/vit_sam_normal.py) with couple extra functions.
 
